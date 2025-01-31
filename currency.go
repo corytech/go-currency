@@ -184,6 +184,7 @@ const (
 	LTC  Currency = "ltc"
 	TRX  Currency = "trx"
 	USDT Currency = "usdt"
+	USDC Currency = "usdc"
 	XLM  Currency = "xlm"
 	XRP  Currency = "xrp"
 	XMR  Currency = "xmr"
@@ -207,6 +208,7 @@ func (c Currency) IsCrypto() bool {
 		LTC,
 		TRX,
 		USDT,
+		USDC,
 		XLM,
 		XRP,
 		XMR,
@@ -249,7 +251,7 @@ func (c Currency) GetPrecision() int {
 		return 4
 	case XDR, XUA, XSU:
 		return 17
-	case BCH, BTC, LTC, USDT:
+	case BCH, BTC, LTC, USDT, USDC:
 		return 8
 	case ETH, TRX, BNB:
 		return 17
@@ -812,6 +814,7 @@ func GetAllCurrencies() []Currency {
 		LTC,
 		TRX,
 		USDT,
+		USDC,
 		XLM,
 		XRP,
 		XMR,
