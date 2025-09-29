@@ -18,6 +18,11 @@ var cryptoCurrencies = []string{
 	"xrp",
 	"xmr",
 	"bnb",
+	"arb",
+	"op",
+	"base",
+	"ada",
+	"matic",
 }
 
 var allCurrencies = []string{
@@ -202,6 +207,11 @@ var allCurrencies = []string{
 	"xrp",
 	"xmr",
 	"bnb",
+	"arb",
+	"op",
+	"base",
+	"ada",
+	"matic",
 }
 
 var iso4217Map = map[int]Currency{
