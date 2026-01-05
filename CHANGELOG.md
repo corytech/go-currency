@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/corytech/go-currency/compare/v1.2.0...v1.3.0) (2026-01-05)
+
+
+### 🚀 Features
+
+* **CPD-7127:** change precision for USDT/USDC ([#7](https://github.com/corytech/go-currency/issues/7)) ([1949bbf](https://github.com/corytech/go-currency/commit/1949bbfb05b401dc19079b62c34b1bd7e58a09d8))
+
 ## [1.2.0](https://github.com/corytech/go-currency/compare/v1.1.1...v1.2.0) (2025-09-29)
 
 
