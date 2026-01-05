@@ -261,7 +261,7 @@ func (c Currency) GetPrecision() int {
 		return 4
 	case XDR, XUA, XSU, ETH, TRX, BNB:
 		return 17
-	case BCH, BTC, LTC, USDT, USDC, ARB, OP, BASE, MATIC:
+	case BCH, BTC, LTC, ARB, OP, BASE, MATIC:
 		return 8
 	case XLM:
 		return 7
@@ -269,7 +269,7 @@ func (c Currency) GetPrecision() int {
 		return 15
 	case XMR:
 		return 12
-	case ADA:
+	case ADA, USDT, USDC:
 		return 6
 	}
 	return -1
