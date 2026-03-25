@@ -194,6 +194,8 @@ const (
 	BASE  Currency = "base"
 	ADA   Currency = "ada"
 	MATIC Currency = "matic"
+	TON   Currency = "ton"
+	SOL   Currency = "sol"
 )
 
 func (c Currency) UpperCaseCode() string {
@@ -222,7 +224,9 @@ func (c Currency) IsCrypto() bool {
 		OP,
 		BASE,
 		ARB,
-		MATIC:
+		MATIC,
+		TON,
+		SOL:
 		return true
 	}
 
@@ -261,7 +265,7 @@ func (c Currency) GetPrecision() int {
 		return 4
 	case XDR, XUA, XSU, ETH, TRX, BNB:
 		return 17
-	case BCH, BTC, LTC, ARB, OP, BASE, MATIC:
+	case BCH, BTC, LTC, ARB, OP, BASE, MATIC, SOL:
 		return 8
 	case XLM:
 		return 7
@@ -269,6 +273,8 @@ func (c Currency) GetPrecision() int {
 		return 15
 	case XMR:
 		return 12
+	case TON:
+		return 9
 	case ADA, USDT, USDC:
 		return 6
 	}
@@ -834,5 +840,7 @@ func GetAllCurrencies() []Currency {
 		BASE,
 		ADA,
 		MATIC,
+		TON,
+		SOL,
 	}
 }
