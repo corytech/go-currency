@@ -23,6 +23,8 @@ var cryptoCurrencies = []string{
 	"base",
 	"ada",
 	"matic",
+	"ton",
+	"sol",
 }
 
 var allCurrencies = []string{
@@ -212,6 +214,8 @@ var allCurrencies = []string{
 	"base",
 	"ada",
 	"matic",
+	"ton",
+	"sol",
 }
 
 var iso4217Map = map[int]Currency{
