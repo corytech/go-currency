@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/corytech/go-currency/compare/v1.4.0...v1.5.0) (2026-03-25)
+
+
+### 🚀 Features
+
+* **CPD-7493:** ton and sol cryptocurrencies added ([#11](https://github.com/corytech/go-currency/issues/11)) ([bcc9a01](https://github.com/corytech/go-currency/commit/bcc9a014af04fda6a340ce3ef0d538dd0dd04951))
+
 ## [1.4.0](https://github.com/corytech/go-currency/compare/v1.3.0...v1.4.0) (2026-02-27)
 
 
