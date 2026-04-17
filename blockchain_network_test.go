@@ -39,6 +39,24 @@ var BlockChainTagMemoRequires = map[string]bool{
 	"eip155:42161": false,
 }
 
+var BlockChainIsValid = map[string]bool{
+	"erc20":        true,
+	"trc20":        true,
+	"bep20":        true,
+	"bep2":         true,
+	"sol":          true,
+	"base":         true,
+	"optimism":     true,
+	"arbitrum":     true,
+	"stellar":      true,
+	"cardano":      true,
+	"eip155:10":    true,
+	"eip155:137":   true,
+	"eip155:8453":  true,
+	"eip155:42161": true,
+	"trcNotValid":  false,
+}
+
 func TestGetAllBlockchainNetwork(t *testing.T) {
 	blockchainNetworks := GetAllBlockchainNetwork()
 	for _, blockchainNetwork := range AllBlockchainNetwork {
@@ -52,6 +70,14 @@ func TestIsTagOrMemoRequired(t *testing.T) {
 	for blockchainNetwork, isMemoRequired := range BlockChainTagMemoRequires {
 		if BlockchainNetwork(blockchainNetwork).isTagOrMemoRequired() != isMemoRequired {
 			t.Fatalf("Expected '%v' isTagOrMemoRequired '%v' get '%v'", blockchainNetwork, isMemoRequired, BlockchainNetwork(blockchainNetwork).isTagOrMemoRequired())
+		}
+	}
+}
+
+func TestBlockchainNetworkIsValid(t *testing.T) {
+	for key, value := range BlockChainIsValid {
+		if BlockchainNetwork(key).IsValid() != value {
+			t.Fatalf("Expected '%v' isValid '%v' get '%v'", key, value, BlockchainNetwork(key).IsValid())
 		}
 	}
 }

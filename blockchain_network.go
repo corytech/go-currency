@@ -1,5 +1,7 @@
 package currency
 
+import "slices"
+
 type BlockchainNetwork string
 
 const (
@@ -26,6 +28,10 @@ func (n BlockchainNetwork) isTagOrMemoRequired() bool {
 		return true
 	}
 	return false
+}
+
+func (n BlockchainNetwork) IsValid() bool {
+	return slices.Contains(GetAllBlockchainNetwork(), n)
 }
 
 func GetAllBlockchainNetwork() []BlockchainNetwork {
