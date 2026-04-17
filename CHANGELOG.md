@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/corytech/go-currency/compare/v1.5.0...v1.6.0) (2026-04-17)
+
+
+### 🚀 Features
+
+* **CPD-7146:** Add validator BlockchainNetwok ([#13](https://github.com/corytech/go-currency/issues/13)) ([bd76201](https://github.com/corytech/go-currency/commit/bd76201347bde52831432bd0c27ddd9fca9a1bee))
+
 ## [1.5.0](https://github.com/corytech/go-currency/compare/v1.4.0...v1.5.0) (2026-03-25)
 
 
