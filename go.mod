@@ -1,6 +1,6 @@
 module github.com/corytech/go-currency
 
-go 1.21.6
+go 1.26.0
 
 require (
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
