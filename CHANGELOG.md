@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/corytech/go-currency/compare/v1.6.0...v1.6.1) (2026-08-05)
+
+
+### 🧰 Maintenance
+
+* **CPD-8393:** Pin external actions with SHA ([#15](https://github.com/corytech/go-currency/issues/15)) ([2e444a7](https://github.com/corytech/go-currency/commit/2e444a7547b0b5ee89b1f32b4646152643d44ae9))
+
 ## [1.6.0](https://github.com/corytech/go-currency/compare/v1.5.0...v1.6.0) (2026-04-17)
 
 
